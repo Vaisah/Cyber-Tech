@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber-Tech - Cybersecurity Solutions</title>
+            
+    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:500, 550,300,400,450,700&amp;display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap">
+
+    <style>
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2b3b3;
+            color: #780606b6;
+            font-size: 20px;
+            font-weight: 500;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #00274d;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+
+
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00274d;
+        }
+        .home {
+  display: grid;
+  grid-template-columns: 0.4fr 0.7fr 1fr;
+  margin-top: 20px;
+}
+
+.home .social-media-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  align-items: center;
+  order: 1;
+}
+
+.home .social-media-icons .fa-brands {
+  font-size: var(--medium-font);
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.home .social-media-icons .fa-github {
+  color: black;
+}
+
+.home .social-media-icons .fa-facebook {
+  color: blue;
+}
+
+.home .social-media-icons .fa-whatsapp {
+  color: #25d366;
+}
+
+.home .home-personal-content {
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #00274d;
+}
+
+.home-personal-content h1 {
+  font-size: var(--medium-font);
+  margin-bottom: 10px;
+  color: var(--orther-color);
+}
+
+.home-personal-content h2 {
+  font-size: var(--sub-font);
+  margin-bottom: 10px;
+}
+
+.home-personal-content h3 {
+  font-size: var(--sub-sub-font);
+  margin-bottom: 10px;
+  color: black;
+}
+
+.home-personal-content p {
+  font-size: var(--p-font);
+  color:#00274d;
+  margin-bottom: 20px;
+}
+
+.home .home-image {
+  order: 3;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.home .home-image img {
+  width: 80%;
+}
+
+.home-personal-content .home-links a:hover {
+  background-color: var(--main-color);
+  color: #f09898;
+}
+
+.home-personal-content .home-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color: #110dc9;
+  width: 100%;
+}
+.home-personal-content .home-links a {
+  display: block;
+  width: fit-content;
+  color: #2929b5;
+  background-color: #b9b9b9c4;
+  padding: 5px 15px;
+  border-radius: 40em;
+}
+
+.home-personal-content .home-links a#last {
+  margin-left: 5px;
+}
+
+@media all and (min-width: 568px) {
+  .home-personal-content .home-links a {
+    padding: 5px 25px;
+  }
+}
+
+/* resposive for home */
+
+@media screen and (max-width: 840px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .home .home-image {
+    order: 2;
+    grid-column: 2/4;
+  }
+
+  .home .social-media-icons {
+    order: 1;
+    grid-column: 1/2;
+  }
+
+  .home .home-personal-content {
+    order: 3;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+  }
+
+  .main-header .main-nav .main-ul li a {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .home {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
+  .home .home-image {
+    order: 1;
+    grid-column: 1/ 4;
+  }
+
+  .home .social-media-icons {
+    order: 2;
+    grid-column: 1/2;
+  }
+
+  .home .home-personal-content {
+    order: 3;
+    grid-column: 2 / 4;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .main-header .main-nav .main-ul li a {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.about .tittle {
+  grid-column: 1/ 2;
+}
+
+.about h1 {
+  font-weight: 800;
+  font-size: var(--medium-font);
+}
+
+.about .tittle h1 p {
+  font-size: var(--p-font);
+}
+
+.about .about-me {
+  grid-column: 1/ 2;
+}
+
+.about .about-me {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto; 
+}
+
+/* using grid for .about-me */
+
+.about .about-me .personal-info,
+.about .about-me .introduction {
+  margin: 15px 5px;
+}
+
+.about .about-me .personal-info {
+  order: 2;
+}
+
+.about .about-me .introduction {
+  order: 1;
+}
+
+
+
+@media screen and (max-width: 840px) {
+  .about .about-me .personal-info {
+    order: 2;
+  }
+
+  .about .about-me .introduction {
+    order: 1;
+  }
+
+}
+
+.about .about-me .personal-info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.about .about-me .personal-info li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.info .test {
+  display: flex;
+}
+
+.info li a {
+  display: block;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: black;
+  
+}
+
+.personal-info .cv{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100px;
+}
+
+
+
+.personal-info .cv a {
+  width: 120px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+
+
+.about p {
+  font-size: var(--p-font);
+  color: #00274d;
+}
+
+.about .personal-info h2,
+.about .introduction h2 {
+  margin-bottom: 20px;
+  color: var(--main-color);
+  font-size: var(--sub-font);
+}
+
+
+.about .personal-info ul .fa-solid,
+.fa-regular {
+  display: inline-block;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.about .personal-info ul .fa-phone {
+  color: var(--main-color);
+}
+
+.about .personal-info ul .fa-envelope {
+  color: rgb(41, 16, 229);
+}
+
+.about .personal-info ul .fa-user {
+  color: black;
+}
+
+.about .personal-info ul .fa-location-dot {
+  color: blue;
+}
+
+.about a {
+  display: block;
+  /* text-align: center; */
+  padding: 10px 0;
+  border-radius: 40em;
+  margin: 5px auto;
+  color: #2929b5;
+  background-color: #b9b9b9c4;
+}
+
+.about a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+
+.bar-holder {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(98px, 1fr));
+  margin-bottom: 20px;
+}
+
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(70px, auto);
+  grid-template-areas:
+    "tittle"
+    "coding"
+    "phone-repair";
+}
+
+.services .tittle {
+  grid-area: tittle;
+}
+
+.services h1{
+  height: 65px;
+}
+
+.services .tittle h1 p {
+  font-size: var(--p-font);
+}
+
+.services .coding {
+  grid-area: coding;
+}
+
+.services .coding {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: minmax(50px, auto);
+  grid-template-areas:
+    "sub-tittle"
+    "sub-coding";
+}
+
+.services .coding .sub-tittle {
+  grid-area: sub-tittle;
+  text-align: center;
+}
+
+.services .coding .sub-coding {
+  grid-area: sub-coding;
+}
+
+/* sub coding flex starts */
+.services .coding .sub-coding {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.services .sub-coding .frontend-development,
+.services .sub-coding .backened-development,
+.services .sub-coding .app-development {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 3px;
+  border-bottom: 2px solid #bbb;
+  border-top-width: 0;
+  padding: 15px 0;
+  border-radius: 12px;
+  color: #00274d;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  
+}
+
+.services .sub-coding p {
+  text-align: center;
+}
+
+/* orther services styles */
+
+.services a {
+  display: block;
+  color: var(--main-color);
+  border-radius: 12px;
+  background-color: #10065e;
+}
+
+.services .sub-coding a {
+  display: block;
+  width: 125px;
+  color: #2929b5;
+  text-align: center;
+}
+
+.services a:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.services .fa-brands,
+.services .fa-solid {
+  font-size: 2rem;
+  color: blue;
+}
+
+.services .phone-repair h2 {
+  margin: 50px 0;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  color: #033a80;
+  font-size: 1.3rem;
+}
+
+.services h1 {
+  font-size: var(--medium-font);
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.services h3 {
+  font-size: 1rem;
+}
+
+/* phone repair */
+
+.services .phone-repair {
+  grid-area: phone-repair;
+}
+
+
+.services .phone-repair {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(50px, auto);
+}
+
+.services .phone-repair li {
+  list-style: disc;
+}
+
+.services .phone-repair .sub-tittle {
+  grid-column: 1 / 3;
+  text-align: center;
+}
+
+.services .phone-repair .sub-repair {
+  grid-column: 1 / 3;
+}
+
+/* sub coding flex starts */
+.services .phone-repair .sub-repair {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.services .sub-repair .iphone-services,
+.services .sub-repair .android-services,
+.services .sub-repair .computer-services,
+.services .sub-repair .orther-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 3px;
+  border-bottom: 2px solid #bbb;
+  border-top-width: 0;
+  padding: 5px 20px;
+  border-radius: 12px;
+  color: #8189f7;
+  box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sub-tittle p {
+  font-size: 1rem;
+  color: #6939fb;
+}
+
+.services .frontend-development:hover,
+.services .backened-development:hover,
+.services .app-development:hover,
+.services .iphone-services:hover,
+.services .android-services:hover,
+.services .computer-services:hover,
+.services .orther-services:hover {
+  background-color: #bbb;
+}
+
+.services .phone-repair h3,
+.services .coding h3 {
+  color: var(--main-color);
+}
+
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(80px, auto);
+  grid-template-areas:
+    "tittle"
+    "form";
+}
+
+.contact .tittle {
+  grid-area: tittle;
+  text-align: center;
+}
+
+.contact .form {
+  grid-area: form;
+  display: grid;
+  margin: 0px;
+  grid-template-columns: repeat(1, 0.5fr 1fr);
+  grid-template-rows: minmax(290px, auto);
+}
+
+.contact .image-icon {
+  margin: 0;
+  background: url(icon-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 135%;
+}
+
+@media screen and (max-width: 850px) {
+  .contact .form {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(290px, auto);
+  }
+  
+
+  .contact .image-icon {
+    background-size: 60%;
+  }
+}
+
+.contact .form form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* margin: 0 20px; */
+}
+
+.contact h1 {
+  align-self: center;
+  font-size: var(--medium-font);
+  font-weight: 800;
+}
+
+.contact h1 p {
+  font-size: var(--p-font);
+}
+
+.contact .form .name,
+.contact .form .email {
+  height: 50px;
+  border-width: 0;
+  background-color: #bbbbbb84;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  font-size: var(--p-font);
+  border-radius: 12px;
+}
+
+.contact .form .message {
+  margin-bottom: 20px;
+  font-size: var(--p-font);
+  padding: 5px 20px;
+  border-width: 0;
+  background-color: #bbbbbb84;
+  border-radius: 12px;
+  width: 100%;
+}
+.contact .form button {
+  width: fit-content;
+  height: 40px;
+  padding: 3px 20px;
+  margin: 0 auto;
+  border-width: 0;
+  border-radius: 10px;
+  background-color: var(--main-color);
+  font-size: var(--main-color);
+  color: #004080;
+  cursor: pointer;
+}
+
+.contact .form button {
+  color: #004080;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #033a80;
+  border-radius: 12px;
+}
+
+.tittle h1 p {
+  font-family: "Prompt", sans-serif;
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 1rem;
+  color: #0e6326;
+}
+
+
+
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  max-width: 960px;
+  margin: 50px auto;
+  padding: 0 10px;
+  min-width: 275px;
+}
+
+section p {
+    flex: 1;
+}
+        
+
+.footer-container {
+  width: 100%;
+  min-width: 180px;
+  background-color: var(--top-bg);
+  background-color: #010d1c;
+  height: 100px;
+}
+
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+  margin-top: 50px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+footer p {
+  color: #717171;
+  font-size: var(--p-font);
+}
+
+footer .logo {
+  font-size: 1.5rem;
+  font-weight: 550;
+}
+
+footer .logo .ceo {
+  font-size: var(--p-font);
+  font-weight: lighter;
+  display: flex;
+}
+
+ul li a.active {
+  background-color: rgb(54, 120, 201);
+}
+        
+body {
+  transition: all 0.3s linear;
+}
+.dark-mode{
+  display: none;
+}
+
+/* dark mode styles */
+
+.tittle .title {
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode label {
+  width: 45px;
+  height: 20px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+.dark-mode label:after {
+  content: "";
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 00px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.dark-mode input {
+  width: 0;
+  height: 0px;
+  visibility: hidden;
+  /* display: none; */
+}
+.dark-mode input:checked + label {
+  background: #242424;
+}
+.dark-mode input:checked + label:after {
+  left: 45px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+label:active:after {
+  width: -45px;
+}
+.backround {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100vw;
+  transition: 0.3s;
+}
+
+
+
+.dark-mode input:checked + label + .backround {
+  background: #242424;
+  /* background: rgba(0, 0, 0, .9); */
+  z-index: -1;
+}
+
+label svg {
+  margin-left: 10px;
+  position: absolute;
+  width: 15px;
+  z-index: 100;
+}
+label svg.sun {
+  left: -6.5px;
+  fill: #fff;
+  transition: 0.3s;
+  top: 2px;
+}
+label svg.moon {
+  left: 18px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+  top: 2px;
+}
+input:checked + label svg.sun {
+  fill: #7e7e7e;
+}
+input:checked + label svg.moon {
+  fill: #fff;
+}
+
+
+header{
+  z-index: 1;
+}
+
+header ul li a{
+  color: #fff;
+}
+
+
+
+.about h1,
+.services h1,
+.works h1,
+.contact h1{
+  border-bottom: 1px solid #bbbbbb53;
+  text-align: left;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        
+        <div>
+            <h1>Cyber-Tech</h1>
+            <h2>Security Solutions</h2>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="home" name="home">
+  
+      
+      <div class="social-media-icons">
+        <!---->
+          <a href="https://github.com/vaizahmulilo978" target="_blank">
+              <i class="fa-brands fa-github"></i>
+          </a>
+          
+          <a href="https://web.facebook.com/vaixhar.muliloh/" target="_blank">
+              <i class="fa-brands fa-facebook"> </i>
+          </a>
+          <!-- find whatsapp link id
+          <a href="https://wa.me/message/WSQ463DN4ZDRK1" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          -->
+      </div>
+
+      <div class="home-image">
+          <!--add logo -->
+
+          <img src="logo.jpg" class="two" alt="">
+      </div>
+
+      <div class="home-personal-content">
+          <br><br>
+          <h2>Hello friends we're</h2>
+          <h1><span id="first-part-of-name">  Cyber-Tech </span> </h1>
+          
+          <p>
+              Welcome to Cyber-Tech your Trusted Cybersecurity Partner  <br>
+              In the ever-evolving landscape of the digital world, <br>
+              safeguarding your online presence is paramount.<br>
+               At Cyber-Tech, we stand as your trusted cybersecurity partner,<br>
+                dedicated to providing cutting-edge solutions that fortify your digital assets <br>
+                and ensure a secure online environment.   </p>
+          
+      </div>
+
+  </section>
+ 
+    <section class="about" name="about">
+      <a name="about"></a>
+        <div class="tittle">
+            <h1 >About Us</h1>
+        </div>
+        <div class="about-me">
+            <div class="introduction">
+                <h2>Introduction</h2>
+                
+                <p>
+                 
+                    Securing your digital world with cutting-edge cybersecurity solutions.<br>
+                Welcome to Cyber-Tech, your dedicated cybersecurity partner. 
+                At Cyber-Tech, we specialize in providing top-notch solutions 
+                to secure your digital assets. From supplying cutting-edge electronics like laptops,
+                 phones, and printers to conducting thorough penetration testing, 
+                 we ensure the highest level of protection. Our expertise extends to web and software development,
+                  Internet cafe management, information systems audit, 
+                 and reliable printing and photocopying services. Trust Cyber-Tech for innovative
+                  and robust cybersecurity solutions tailored to safeguard your online presence. 
+                  Your digital security is our priority.
+                    
+                </p>
+                    
+                
+            </div>
+
+
+            <div class="personal-info">
+                <div class="tittle">
+                    <h2>Personal Information</h2>
+                </div>
+                
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-user"></i>Innocent Nsunga
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>Livingstone Zambia </li>
+                        <li>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>FNB Bank first floor Room 1 </li>
+                            <li>
+                            <i class="fa-regular fa-envelope"></i>innocentnsunga@gmail.com
+                        </li>
+                        <li class="test">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <a href="tel:+260979212550" style="pointer-events: none;"> +260-979-212-550</a>
+                            </li>
+                            <li class="test">
+                              <i class="fa-solid fa-phone"></i>
+                              <a href="tel:+260962861409" style="pointer-events: none;">+260-962-861-409</a>
+                              </li>
+                          
+                    </ul>
+
+                </div>
+               
+        </div>
+
+    </section>
+
+
+
+    <section class="services" name="services">
+      
+        <div class="tittle">
+          <a name="services"></a>
+            <h1 >Services</h1>
+        </div>
+
+        <div class="coding">
+            <div class="sub-tittle">
+                <h2>Web</h2>
+            </div>
+            
+            <div class="sub-coding">
+                <div class="frontend-development">
+                    <i class="fa-solid fa-code"></i>
+                    <ul>
+                        <li><h3>Electronics Supply</h3></li>
+                        <li><h3>Web Development</h3></li>
+                        <li><h3>Penetration Testing</h3></li>
+                        <li><h3>Internet Cafe</h3></li>
+                        <li><h3>Information Systems Audit</h3></li>
+                        <li><h3>Software Design and Implementation</h3></li>
+                        <li><h3>Printing and Photocopying</h3></li>
+                    </ul>
+                   
+                </div>
+               
+            </ul>
+
+    </section>
+
+    <section class="contact" name="contact">
+      
+
+        <div class="tittle">
+          <a name="contact"></a>
+            <h1 >Contact Us</h1>
+        </div>
+    
+        <div class="form">
+            <div class="image-icon">
+
+            </div>
+        
+            <form id="contact-form" onsubmit="return validateForm()">
+                <input type="text" id="user_name" name="name" class="name" placeholder="Your Name" required>
+                <input type="email" id="user_email" name="email" class="email" placeholder="Your Email" required>
+                <textarea style="resize: none;" id="message" name="message" class="message" cols="30" rows="10" placeholder="Your Message to Cyber-Tech" required></textarea>
+                <button class="submit-btn" type="submit">Send</button>
+            </form>
+        </div>
+
+    </section>
+    <br><br><br><br><br>
+    
+    </div>
+
+    <div class="footer-container">
+      <footer>
+        <p>&copy; 2024 Cyber-Tech - Cybersecurity Solutions</p>
+    </footer>
+    </div>
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="./scripts/script.js" ></script>
+    
+</body>
+
+</html>
