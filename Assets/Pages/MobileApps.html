@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Aps</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header"><!--header-start-->
+        <div class="container">
+          <div class="header_left">
+            <a class="logo" href="#" onclick="setActive(this); showSection('home');"><img src="./Assets/Images/CYBER.png" alt="logo"></a>
+          </div>
+          <div class="header_right">
+            <label for="menuTrigger" class="nav_ico"><i class="fa fa-bars"></i></label>
+            <input id="menuTrigger" type="checkbox" name="">
+            <nav class="main_nav">
+              <ul>
+                <li><a href="#" onclick="setActive(this); showSection('home');">Home</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('about');">About</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('services');">Service</a>
+                  <!--i class="fa fa-caret-down"></i-->
+                  <ul>
+                    <li><a href="./Forensics.html" onclick="setActive(this); showSection('forensics');">Forensics</a></li>
+                    <li><a href="./Cybersecurity.html" onclick="setActive(this); showSection('cybersecurity');">Cybersecurity</a></li>
+                    <li><a href="./WebDev.html" onclick="setActive(this); showSection('web');">Web Development</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('mobile');">Mobile Apps Development</a>
+                      <!--i class="fa fa-caret-down"></i>
+                      <ul>
+                        <li><a href="#">Service 11</a></li>
+                        <li><a href="#">Service 11</a></li>
+                        <li><a href="#">Service 11</a>
+                          <i class="fa fa-caret-down"></i>
+                          <ul>
+                            <li><a href="#">Service 111</a></li>
+                            <li><a href="#">Service 111</a></li>
+                            <li><a href="#">Service 111</a></li>
+                          </ul>
+                        </li>
+                      </ul-->
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="#" onclick="setActive(this); showSection('projects');">Projects</a></li>
+                <li><a href="#" onclick="setActive(this); showSection('contact');">Contact Us</a></li>
+              </ul>
+            </nav>    
+          </div>
+          
+        </div>
+      </header><!--header-end-->
+      <script src="../js/script.js"></script>
+</body>
+</html>

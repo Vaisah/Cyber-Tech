@@ -1,79 +1,552 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./samples/Assets/styleH.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <label class="logo">CyberTech</label>
-        <ul>
-            <li><a class="nav-link active" href="#" onclick="setActive(this)">Home</a></li>
-            <li><a class="nav-link" href="#" onclick="setActive(this)">About</a></li>
-            <li><a class="nav-link" href="./samples/services.html" onclick="setActive(this)">Service</a></li>
-            <li><a class="nav-link" href="./samples/works.html" onclick="setActive(this)">Projects</a></li>
-            <li><a class="nav-link" href="./samples/contact.html" onclick="setActive(this)">Contact</a></li>
-        </ul>
-    </nav>
-    
-      <div class="animated-background">
-        <div class="content">
-            <h1>CyberTech</h1>
-            <p><i>"Your Companion in Cybersecurity Solutions"</i></p>
-          </div>
-          <!--div class="social-media-icons">
-            <ul>
-              <li><i class="fab fa-facebook-f"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
-              <li><i class="fab fa-instagram"></i></li>
-              <li><i class="fab fa-linkedin-in"></i></li>
-              <li><i class="fab fa-youtube"></i></li>
-           </ul>
-          </div-->
+      <!DOCTYPE html>
+      <html lang="en" dir="ltr">
+        <head>
+          <meta charset="utf-8">
+          <title>CyberTech</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="shortcut icon" type="x-icon" href="./Assets/Images/CYBER.png">
+          <link rel="stylesheet" href="./Assets/CSS/style.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          <script src="https://kit.fontawesome.com/018d9ba538.js" crossorigin="anonymous"></script>
+        </head>
+        <body>
+          <header id="header"><!--header-start-->
+            <div class="container">
+              <div class="header_left">
+                <a class="logo" href="#" onclick="setActive(active); showSection('home'); "><img src="./Assets/Images/CYBER.png" alt="logo"></a>
+              </div>
+              <div class="header_right">
+                <label for="menuTrigger" class="nav_ico" onclick=" openNav();"><i class="fa fa-bars"></i></label>
+                <input id="menuTrigger" type="checkbox" name="">
+                <nav class="main_nav" id="myNav">
+                  <ul>
+                    <li><a href="#" onclick="setActive(this); showSection('home');">Home</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('about');">About</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('services');">Service</a>
+                      <!--i class="fa fa-caret-down"></i-->
+                      <!--ul>
+                        <li><a href="#" onclick="setActive(this); showSection('forensics');">Forensics</a></li>
+                        <li><a href="./Assets/Pages/Cybersecurity.html" onclick="setActive(this); showSection('cybersecurity');">Cybersecurity</a></li>
+                        <li><a href="./Assets/Pages/WebDev.html" onclick="setActive(this); showSection('web');">Web Development</a></li>
+                        <li><a href="./Assets/Pages/MobileApps.html" onclick="setActive(this); showSection('mobile');">Mobile Apps Development</a>
+                          <--i class="fa fa-caret-down"></i>
+                        </li>
+                      </ul-->;
+                    </li>
+                    <li><a href="#" onclick="setActive(this); showSection('projects'); ">Projects</a></li>
+                    <li><a href="#" onclick="setActive(this); showSection('contact');">Contact Us</a></li>
+                  </ul>
+                </nav>    
+              </div>
+              
+            </div>
+          </header><!--header-end-->
           
-          <div id="word-container"></div>
-      </div>
-  
+          <section id="home" class="active">
+            <div class="animated-background">
+              <div class="content">
+                <h1>CyberTech</h1>
+                <p><i>"Your Companion in Cybersecurity Solutions"</i></p>
+              </div>
+              <div id="word-container"></div>
+            </div>
+          </section>
 
-      <script>
-        const words = ['Desing', 'Detection', 'Prevention', 'Investigation'];
-        const wordContainer = document.getElementById('word-container');
-    
-        function showWord(index) {
-          setTimeout(() => {
-            wordContainer.innerHTML = words.slice(0, index + 1).join(' &#8226; ');
-    
-            if (index === words.length - 1) {
-              setTimeout(() => {
-                wordContainer.innerHTML = '';
-                showWord(0);
-              }, 1000);
-            } else {
-              showWord(index + 1);
-            }
-          }, 1000);
-        }
-    
-        showWord(0);
-        // nav bar links
-        function setActive(clickedElement) {
-            // Remove the "active" class from all nav-links
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => link.classList.remove('active'));
+          <!--start about-->
+          <section id="about" class="about-us">
+            <!-- Add content for the 'About' section here -->
+            <div class="about-section">
+              <h1>About Us Page</h1>
+              <p>We provide cutting edge cybersecurity solutions</p>
+              <p></p>
+            </div>
+            
+            <h2 style="text-align:center">Our Team</h2>
+            <div class="about-row">
+              <div class="column">
+                <div class="about-card">
+                  <img src="/Images/log.png" alt="img" style="width:100%">
+                  <div class="about-container">
+                    <h2>Innocent Nsunga</h2>
+                    <p class="title">CEO & Founder</p>
+                    <p>Senior Penetration Tester</p>
+                    <p>innocentnsunga@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
 
-            // Add the "active" class to the clicked nav-link
-            clickedElement.classList.add('active');
-        }
-      </script>
-    
-  </body>
-</html>
+              <div class="column">
+                <div class="about-card">
+                  <img src="/Images/hello.jpg" alt="img" style="width:100%; height:50px;">
+                  <div class="about-container">
+                    <h2>Vaisah Mulilo</h2>
+                    <p class="title">Programmer</p>
+                    <p>Senior Programmer Junior Penetration Tester</p>
+                    <p>vaizahmulilo978@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="about-card">
+                  <img src="/Assets/Images/hello.jpg" alt="img" style="width:100%">
+                  <div class="about-container">
+                    <h2>Thomas Chilewa</h2>
+                    <p class="title">Software Engineer</p>
+                    <p>Senior software Engineer</p>
+                    <p>thomaschilewa@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="about-card">
+                  <img src="/Assets/Images/hello.jpg" alt="img" style="width:100%">
+                  <div class="about-container">
+                    <h2>Maxas Lukwesa</h2>
+                    <p class="title">Web Developer</p>
+                    <p>Senior Web Developer</p>
+                    <p>maxaslukwesa@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="about-card">
+                  <img src="/Assets/Images/hello.jpg" alt="img" style="width:100%">
+                  <div class="about-container">
+                    <h2>Hillary Banda</h2>
+                    <p class="title">Network Engineer</p>
+                    <p>Senior Network Engineer</p>
+                    <p>hillarybanda@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column">
+                <div class="about-card">
+                  <img src="/Assets/Images/hello.jpg" alt="img" style="width:100%">
+                  <div class="about-container">
+                    <h2>Timothy Phiri</h2>
+                    <p class="title">Web Designer</p>
+                    <p>Senior Web Designer</p>
+                    <p>timothyphiri@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+          <!--Services page-->
+          <section id="services">
+            <div class="service-container">
+              <!--
+              <button class="prev" onclick="showPreviousService()">&#10094;</button>
+              -->
+              <div class="service active">
+                  <img src="./Assets/Images/forensics1.webp" alt="Forensics Service">
+                  <div class="service-info">
+                      <h2>Forensics</h2>
+                      <p>Forensic deals with Computer 
+                           and Mobile device investigations.
+                          The main tasks involved in this category 
+                          include data recovery for deleted evidence 
+                          and password cracking to access locked devices. </p>
+                      <a href="#" a href="#" onclick="setActive(this); showSection('forensics'); " class="learn-more-btn">Learn More</a>
+                  </div>
+              </div>
+      
+              <div class="service">
+                  <img src="./Assets/Images/cybersecurity.jpg" alt="Cybersecurity Service">
+                  <div class="service-info">
+                      <h2>Cybersecurity</h2>
+                      <p>cybersecurity aims at providing digital security solutions to protect
+                           your electronic assets. Detection, and Protection of digital assets in 
+                           "real-time" are at the centre in this category. </p>
+                      <a href="#" a href="#" onclick="setActive(this); showSection('cybersecurity'); " class="learn-more-btn">Learn More</a>
+                  </div>
+              </div>
+      
+              <div class="service">
+                  <img src="./Assets/Images/mobile_apps1.png" alt="Mobile Applications Service">
+                  <div class="service-info">
+                      <h2>Mobile Applications</h2>
+                      <p>Our mobile app development team creates innovative and user-friendly
+                           applications for various platforms, among the popular ones being Android
+                            and IOS platforms.</p>
+                      <a href="#" a href="#" onclick="setActive(this); showSection('mobile'); " class="learn-more-btn">Learn More</a>
+                  </div>
+              </div>
+      
+              <div class="service">
+                  <img src="./Assets/Images/web_design.png" alt="Web Design and Implementation Service">
+                  <div class="service-info">
+                      <h2>Web Design</h2>
+                      <p>We specialize in designing and implementing modern, responsive websites
+                           and web applications that users can interact with, tailored to your technological needs.</p>
+                      <a href="#" a href="#" onclick="setActive(this); showSection('webdev'); " class="learn-more-btn">Learn More</a>
+                  </div>
+              </div>
+          
+
+
+          </section>
+
+          <!--Forensics page-->
+          <section id="forensics">
+            <section class="image-section">
+              <div class="description">
+                <h3>Forensics</h2>
+                <p>The Forensic aspect deals with the investigations relating to the computer and mobile
+                  crimes that may have been committed by the perpetrator. In this area our firm has the 
+                  specialization to investigate computer and mobile crimes on devices that have been lawfully
+                    been seized by the investigative wings of government to bring perpetrators to book</p>
+              </div>
+              <div class="image-container">
+                <img src="./Assets/Images/ecom.png" alt="Image 3">
+              </div>
+            
+            </section>
+            <section class="subsection" id="section1">
+              <div class="description">
+                <h2>Mobile forensics</h2>
+                <p>looks at mobile phone-based evidence that may have been used
+                  to commit a cybercrime. The challenge in this uncharted field lies in the 
+                  rapid technological changes that occur daily, monthly, quarterly or annually through updates.
+                  Our specialists fortunately for the clients are ever running on their toes to keep tabs
+                  with these ever-changing mobile updates that makes it difficult for investigators to gather evidence after
+                  a cybercrime has occurred.</p>
+              </div>
+              
+              <div class="media">
+                <img src="./Assets/Images/forensics.png" alt="Image 1">
+              </div>
+            </section>
+            <div class="separator"></div>
+            <section class="image-section">
+              <div class="description">
+                <h3>Device Imaging and Analysis</h2>
+                <p>The part for this section and other parts and stuff
+                  - is specific to a computing device that was used for committing the crime. 
+                  This computer device once seized, will be thoroughly investigated for 
+                  evidence in question, once found locked by the owner, 
+                  CyberTech has sufficient skills to bypass the locked screen and crack 
+                  the password or change it entirely even in its locked state in order to access
+                  the evidence at hand. Certain criminals might be
+                  clever enough as to delete incriminating evidence to avoid going to jail, 
+                  fortunately for our clients CyberTech is equipped with skills to recover
+                  deleted information even after it has long been deleted.
+                </p>
+              </div>
+              <div class="image-container">
+                <img src="../Assets/Images/forensics.png" alt="Image 2">
+              </div>
+              
+            </section>
+            <section class="subsection">
+              <div class="description">
+                <h2>Computer Forensics</h2>
+                <p>This is dues with finding evidence on computer hard drives and live computers. This is a demo of wifi password cracking</p>
+              </div>
+              <div class="media">
+                <video width="650" height="400" controls>
+                  <source src="./Assets/videos/WiFi Hack.ogv" type="video/mp4">
+                </video>
+              </div>
+            </section>
+            <div class="separator"></div>
+            <section class="subsection" id="section1">
+              <div class="description">
+                <h2>Mobile Forensics</h2>
+                <p>Looks at mobile phone-based evidence that may have been used to
+                  commit a cybercrime. The challenge in this uncharted field lies in the rapid
+                  technological changes that occur daily, monthly, quarterly or annually through updates
+                  This is a demonstration of raw data extraction for evidence from a mobile phone.</p>
+              </div>
+              <div class="media">
+                <video width="600" height="400" controls>
+                  <source src="./Assets/videos/WiFi Hack.ogv" type="video/mp4">
+                </video>
+              </div>
+            </section>
+
+          </section>
+
+          <!--Start projects-->
+          <section id="projects">
+            <!-- Add content for the 'Projects' section here -->
+          <div class="separator"></div>
+          <div class="details-header">
+              <h2 class="more">More Details</h2>
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="details-section">
+              
+              <div class="details" id="forensics-details">
+                  <img src="./Assets/Images/forensics.png" alt="Forensics Details Image">
+                  <h2>Forensics</h2>
+                  <p>Mobile forensics is a specialized field within digital forensics
+                      dedicated to the investigation and analysis of digital evidence
+                        on mobile devices. With the ubiquity of smartphones and tablets, 
+                        mobile forensics plays a crucial role in uncovering valuable information for legal,
+                        investigative, and cybersecurity purposes. This discipline involves the systematic
+                          extraction, preservation, and examination of data from mobile devices to reconstruct 
+                          events, uncover patterns, and retrieve crucial evidence.</p>
+
+                          <h3>Services</h3>
+                          <ul>
+                              <li>Data Extraction and Recovery</li>
+                              <li>Device Imaging and Analysis</li>
+                              <li>Forensics Report Generation</li>
+                              <li>Consultation</li>
+                          </ul>
+                          
+              </div>
+
+
+              <div class="separator"></div>
+
+              <div class="details" id="cybersecurity-details">
+                  <img src="./Assets/Images/cybersecurity.jpg" alt="Cybersecurity Details Image">
+                  <h2>Cybersecurity</h2>
+                  <p>Cybersecurity is a critical field dedicated to safeguarding digital systems, 
+                      networks, and data from malicious threats, ensuring the confidentiality, integrity,
+                      and availability of information. In an era dominated by interconnected technologies,
+                        the importance of cybersecurity cannot be overstated. This discipline encompasses 
+                        a wide range of practices, strategies, and technologies aimed at protecting individuals,
+                        organizations, and governments from cyber threats</p>
+
+                        <h3>Services</h3>
+                  <ul>
+                      <li>Network Security</li>
+                      <li>Vulnerability Management</li>
+                      <li>Penetration Testing</li>
+                      <li>Information security</li>
+                      <li>Information Systems Audit and Implementation</li>
+                      <li>Identity and Access Management</li>
+                      <li>Firewall Protection</li>
+                  </ul>
+                  
+                
+                  <section class="subsection">
+                    <div class="content">
+                      <h2>Title 3</h2>
+                      <p>Description for Title 3. </p>
+                    </div>
+                    <div class="media">
+                      <img src="./Assets/Images/mobile_apps.png" alt="Image 2">
+                    </div>
+                  </section>
+            
+              </div>
+
+              <div class="separator"></div>
+
+              <div class="details" id="mobile-apps-details">
+                  <img src="./Assets/Images/mobile_apps.png" alt="Mobile Applications Details Image">
+                  <h2>Mobile Applications</h2>
+                  <p>Mobile app development is a dynamic and rapidly evolving field that involves 
+                      the creation of applications tailored for use on mobile devices, such as 
+                      smartphones and tablets. With the proliferation of mobile technology, app development 
+                      has become a cornerstone of the digital landscape, offering innovative solutions
+                      and enhancing user experiences across various industries. </p>
+
+                      <h3>Services</h3>
+                      <ul>
+                          <li>User Interface (UI) Design</li>
+                          <li>Android Apps Developement</li>
+                          <li>Appliction Testing</li>
+                      </ul>
+              </div>
+
+              <div class="separator"></div>
+
+              <div class="details" id="web-design-details">
+                  <img src="./Assets/Images/web_design.png" alt="Web Design Details Image">
+                  <h2>Web Design and Implementation</h2>
+                  <p>Web development is a dynamic and multidisciplinary field focused 
+                      on creating and maintaining websites for the internet. 
+                      It involves a combination of skills, technologies,
+                      and methodologies to design, develop, and deploy web applications
+                        and content that users can access through web browsers. 
+                        Web development encompasses a wide range of tasks,
+                        from building simple static web pages to developing complex, 
+                        interactive web applications.</p>
+
+                        <h3>Services</h3>
+                        <ul>
+                          <li>Frontend Development</li>
+                          <li>Backend Development</li>
+                          <li>Full-Stack Development</li>
+                          <li>Web Design</li>
+                          <li>Web Security</li>
+                          <li>Web deployment and Hosting</li>
+                        </ul>
+
+                        <section class="content-section">
+                          <img src="https://via.placeholder.com/800x400" alt="Image 1">
+                          <div class="description">
+                            <h2>Title 1</h2>
+                            <p>Description for Title 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <a href="#" class="button-link">Learn More</a>
+                          </div>
+                        </section>
+                      
+                        <section class="content-section">
+                          <img src="https://via.placeholder.com/800x400" alt="Image 2">
+                          <div class="description">
+                            <h2>Title 2</h2>
+                            <p>Description for Title 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <a href="#" class="button-link">Learn More</a>
+                          </div>
+                        </section>
+                      
+                        <section class="content-section">
+                          <img src="https://via.placeholder.com/800x400" alt="Image 3">
+                          <div class="description">
+                            <h2>Title 3</h2>
+                            <p>Description for Title 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                            <a href="#" class="button-link">Learn More</a>
+                          </div>
+                        </section>
+              </div>
+              <div class="separator"></div>
+
+          </div>
+          <i class="fa-solid fa-angle-up" onclick="scrollToTop()" class="back-to-top"></i>
+          <!--
+          <button class="back-to-top" onclick="scrollToTop()">Back to Top</button>
+          -->
+          
+          </section>
+
+          <section id="contact">
+            <!-- Add content for the 'Contact' section here -->
+            <div class="contacts">
+
+            
+            <div class="wrapper">
+              <header>Send us a Message</header>
+              <form action="#">
+                <div class="dbl-field">
+                  <div class="field">
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <i class='fas fa-user'></i>
+                  </div>
+                  <div class="field">
+                    <input type="text" name="email" placeholder="Enter your email">
+                    <i class='fas fa-envelope'></i>
+                  </div>
+                </div>
+                <div class="dbl-field">
+                  <div class="field">
+                    <input type="text" name="phone" placeholder="Enter your phone">
+                    <i class='fas fa-phone-alt'></i>
+                  </div>
+                  <!--div class="field">
+                    <input type="text" name="website" placeholder="Enter your website">
+                    <i class='fas fa-globe'></i>
+                  </div-->
+                </div>
+                <div class="message">
+                  <textarea placeholder="Write your message" name="message"></textarea>
+                  <i class="material-icons"></i>
+                </div>
+                <div class="button-area">
+                  <button type="submit">Send Message</button>
+                  <span></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          </section>
+          
+            <!--Cybersecurity-->
+            <section id="cybersecurity">
+
+            </section>
+            <!--Web development-->
+            <section id="web">
+
+            </section>
+
+            <!--Mobile applictions-->
+            <section id="mobile">
+
+            </section>
+          <script src="./Assets/js/script.js"></script>
+          <footer>
+            <div class="content">
+              <div class="top">
+                <div class="logo-details">
+                  
+                  <!--img src="./Assets/Images/CYBER.png" alt="" class="logo-footer"-->
+                  <span class="logo">CyberTech</span>
+                </div>
+                <div class="media-icons">
+                  <a href="https://web.facebook.com/vaixhar"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+              <div class="link-boxes">
+                <ul class="box">
+                  <li class="link_name">Company</li>
+                  <li><a href="#" onclick="setActive(this); showSection('home');">Home</a></li>
+                  <li><a href="#" onclick="setActive(this); showSection('contact');">Contact us</a></li>
+                  <li><a href="#" onclick="setActive(this); showSection('about');">About us</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name" onclick="setActive(this); showSection('services');">Services</li>
+                  <li><a href="#">App design</a></li>
+                  <li><a href="#">Web design</a></li>
+                  <li><a href="#">Forensics</a></li>
+                  <li><a href="#">Cybersecurity</a></li>
+                </ul>
+                <!--ul class="box">
+                  <li class="link_name">Account</li>
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">My account</a></li>
+                  <li><a href="#">Prefrences</a></li>
+                  <li><a href="#">Purchase</a></li>
+                </ul>
+                <ul class="box">
+                  <li class="link_name">Courses</li>
+                  <li><a href="#">HTML & CSS</a></li>
+                  <li><a href="#">JavaScript</a></li>
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">Photoshop</a></li>
+                </ul>
+                <ul class="box input-box">
+                  <li class="link_name">Subscribe</li>
+                  <li><input type="text" placeholder="Enter your email"></li>
+                  <li><input type="button" value="Subscribe"></li>
+                </ul-->
+              </div>
+            </div>
+            <div class="bottom-details">
+              <div class="bottom_text">
+                <span class="copyright_text">Copyright © 2024 <a href="#">CyberTech.</a>All rights reserved</span>
+                <span class="policy_terms">
+                  <a href="#">Privacy policy</a>
+                  <a href="#">Terms & condition</a>
+                </span>
+              </div>
+            </div>
+          </footer>
+
+        </body>
+      </html>
